@@ -1,0 +1,8 @@
+Análisis comparativo de métodos de inversión con Libertex.
+
+Ver README.md para la explicación completa de:
+- Método 1: Trading activo con CFDs (corto plazo)
+- Método 2: Inversión real con Libertex Portfolio (largo plazo)
+- Estrategia híbrida recomendada (80/10 split)
+
+Conclusión clave: usar la cuenta Demo durante un buen tiempo antes de poner un solo dólar real.
