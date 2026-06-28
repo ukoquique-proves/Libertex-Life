@@ -22,6 +22,7 @@ class BrokerConnector(ABC):
 De este modo, tu lógica de FastAPI se comunicará únicamente con BrokerConnector. Si mañana decides cambiar de proveedor, solo escribes un nuevo archivo de conexión sin tocar tu algoritmo.
 ​2. Sustituir el Backend: ¿A dónde migrar el código?
 ​Dependiendo de qué activos quieras operar con tu bot, tienes dos rutas oficiales donde las APIs son transparentes, las reglas son fijas y no compites contra la "casa":
+
 ​Opción A: Si quieres operar Cripto o Activos Tokenizados Reales
 ​El Sustituto: Binance API o Bybit API (utilizando la librería unificada CCXT en Python).
 ​Por qué es mejor: Son mercados spot y de futuros masivos. A diferencia de un bróker de CFDs, ellos ganan una comisión minúscula por transacción (maker/taker fees) y les interesa que tu bot opere millones de veces. Tienen WebSockets ultra veloces y APIs públicas con documentación estándar. No hay re-cotizaciones; si tu orden entra, se ejecuta al precio de libro real.
